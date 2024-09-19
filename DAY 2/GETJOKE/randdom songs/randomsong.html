@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Song Generator</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #a2c2e4, #f4e3e3);
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            background: linear-gradient(145deg, #4CAF50, #45a049);
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background: linear-gradient(145deg, #45a049, #4CAF50);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+        #jokeDisplay {
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #555;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Random Song Name Generator</h1>
+        <button id="jokeBtn">Get a Random Song</button>
+        <p id="jokeDisplay">Click the button to get a random song:</p>
+    </div>
+
+    <script src="random.js"></script>
+</body>
+</html>
